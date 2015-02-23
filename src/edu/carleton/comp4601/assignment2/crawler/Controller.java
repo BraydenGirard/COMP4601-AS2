@@ -1,5 +1,6 @@
 package edu.carleton.comp4601.assignment2.crawler;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.slf4j.Logger;
@@ -22,7 +23,7 @@ public class Controller {
 	final static String crawlStorageFolder = "/data/crawl/root";
 	final static String luceneIndexFolder = "/data/lucene/";
 	final static int numberOfThreads = 1;
-	final static String[] crawlDomains = new String[] { "http://www.carleton.ca" };
+	final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/" };
 	//final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://daydreamdev.com" };
 	
 	/**
@@ -55,6 +56,7 @@ public class Controller {
 		
 		logger.info("Web Crawler Controller Started");
 		
+		FileUtils.deleteFolder(new File(homePath + luceneIndexFolder));
 		FileUtils.createDirectory(homePath + luceneIndexFolder);
 		
 		CrawlConfig config = new CrawlConfig();

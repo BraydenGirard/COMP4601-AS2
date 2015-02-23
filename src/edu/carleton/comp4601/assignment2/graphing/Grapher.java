@@ -12,14 +12,14 @@ public class Grapher implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = -6017417770252581831L;
-	private DefaultDirectedGraph<PageVertex, DefaultEdge> graph;
+	private Multigraph<PageVertex, DefaultEdge> graph;
 	private ConcurrentHashMap<Integer, PageVertex> vertices;
 	private String name;
 	public int idCounter;
 	
 	public Grapher(String name) {
 		this.name = name;
-		this.graph = new DefaultDirectedGraph<PageVertex, DefaultEdge>(DefaultEdge.class);
+		this.graph = new Multigraph<PageVertex, DefaultEdge> (DefaultEdge.class);
 		this.vertices = new ConcurrentHashMap<Integer, PageVertex>();
 		this.idCounter = 0;
 	}
@@ -71,7 +71,7 @@ public class Grapher implements Serializable {
 		return idCounter;
 	}
 	
-	public DefaultDirectedGraph<PageVertex, DefaultEdge> getGraph() {
+	public Multigraph<PageVertex, DefaultEdge>  getGraph() {
 		return this.graph;
 	}
 }

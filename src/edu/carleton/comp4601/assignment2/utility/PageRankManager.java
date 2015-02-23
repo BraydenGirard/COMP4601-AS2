@@ -2,10 +2,11 @@ package edu.carleton.comp4601.assignment2.utility;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Set;
+
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.Multigraph;
 
 import edu.carleton.comp4601.assignment2.dao.Document;
 import edu.carleton.comp4601.assignment2.database.DatabaseManager;
@@ -14,20 +15,20 @@ import edu.carleton.comp4601.assignment2.graphing.PageVertex;
 import Jama.Matrix;
 
 public class PageRankManager {
-	
+
 	Grapher graph;
-	Matrix matrix;
+	Matrix pageRankMatrix;
 	double a = 0.1;
 	HashMap<Integer, Float> pageRanks = new HashMap<Integer, Float>();
 	private boolean rankComplete = false;
 	private static PageRankManager instance;
 	Set<PageVertex> currentVertices;
-	
+
 	// Singleton setter
 	public static void setInstance(PageRankManager instance) {
 		PageRankManager.instance = instance;
 	}
-	
+
 
 	// Gets this singleton instance
 	public static PageRankManager getInstance() {
@@ -48,38 +49,68 @@ public class PageRankManager {
 		}
 	}
 	
-	public void computePageRank() {
-		setupMatrix();
-        remakeMatrix();
-        cleanMatrix(); 
-		
-        rankComplete = true;
-	}
 	public Tuple<ArrayList<String>, ArrayList<Float>> getPageRank() {
-		
-        if(rankComplete) {
-        	ArrayList<Document> allDocuments = DatabaseManager.getInstance().getDocuments();
-        	System.out.println("There are: " + allDocuments.size() + " documents");
-        	System.out.println("There are: " + currentVertices.size() + " vertices");
-        	ArrayList<String> documentTitle = new ArrayList<String>();
-        	ArrayList<Float> documentRank = new ArrayList<Float>();
 
-        	for(int i=0; i<allDocuments.size(); i++) {
-        		for(PageVertex v: currentVertices) {
-        			int vertexId = v.getId();
-        			int documentId = allDocuments.get(i).getId();
-        			if(vertexId == documentId) {
-        				documentTitle.add(allDocuments.get(i).getName());
-        				documentRank.add((float) pageRanks.get(v.getRow()));
-        			}
-        		}
-        	}
-        	 return new Tuple<ArrayList<String>, ArrayList<Float>>(documentTitle, documentRank);
-        }
-   
-        return null;    
+		if(rankComplete) {
+			ArrayList<Document> allDocuments = DatabaseManager.getInstance().getDocuments();
+			System.out.println("There are: " + allDocuments.size() + " documents");
+			//System.out.println("There are: " + currentVertices.size() + " vertices");
+			ArrayList<String> documentTitle = new ArrayList<String>();
+			ArrayList<Float> documentRank = new ArrayList<Float>();
+
+			Multigraph<PageVertex, DefaultEdge> mutliGraph = this.graph.getGraph();
+			
+			/*
+			for(int i=0; i<allDocuments.size(); i++) {
+				for(int j=0; j < currentVertices.size(); j++) {
+					Document doc = allDocuments.get(i);
+					int docId = doc.getId();
+					int vertexId = v.getId();
+				
+					if(docId == vertexId) {
+						float score = (float) pageRankMatrix.get(i, 0);
+						documentTitle.add(doc.getName());
+						documentRank.add(score);
+					}
+				}
+				for (DefaultEdge edge : mutliGraph.edgeSet()) {
+					PageVertex v1 = mutliGraph.getEdgeSource(edge);
+					PageVertex v2 = mutliGraph.getEdgeTarget(edge);
+					
+					int v1Id = v1.getId();
+					int v2Id = v2.getId();
+					
+					if(v1Id == docId) {
+						float score = (float) pageRankMatrix.get(v1Id, v2Id);
+						documentTitle.add(doc.getName());
+						documentRank.add(score);
+					}
+				}
+				
+			}*/
+			
+			/*
+			for(int i=0; i<allDocuments.size(); i++) {
+				for(PageVertex v: currentVertices) {
+					int vertexId = v.getId();
+					int documentId = allDocuments.get(i).getId();
+					if(vertexId == documentId) {
+						documentTitle.add(allDocuments.get(i).getName());
+						documentRank.add((float) pageRanks.get(v.getRow()));
+					}
+				}
+			}*/
+			return new Tuple<ArrayList<String>, ArrayList<Float>>(documentTitle, documentRank);
+		}
+
+		return null;    
 	}
 	
+	/**
+	 * TODO: This wont work
+	 * @param docId
+	 * @return
+	 */
 	public float getDocumentPageRank(int docId) {
 
 		float documentRank = 0;
@@ -96,107 +127,125 @@ public class PageRankManager {
 		return documentRank;
 	}
 
-	private void setupMatrix() {
-		//System.out.println(graph.getGraph().vertexSet().size());
-		double[][] arrayDummy = new double[graph.getGraph().vertexSet().size()][graph.getGraph().vertexSet().size()];
-		matrix = new Matrix(arrayDummy);
-		int row = 0;
-		int col = 0;
+	public void computePageRank() {
+		this.currentVertices = this.graph.getGraph().vertexSet();
+		
+		int size = this.currentVertices.size();
 
-		currentVertices = this.graph.getGraph().vertexSet();
-		
-		Iterator<PageVertex> itr1 = currentVertices.iterator();
-		Iterator<PageVertex> itr2 = currentVertices.iterator();
-		
-		while(itr1.hasNext()) {
-			while(itr2.hasNext()) {
-				if(this.graph.getGraph().getEdge(itr1.next(), itr2.next()) != null) {	
-					matrix.set(row, col, 1);
-				}
-				else {
-					matrix.set(row, col, 0);	
-				}
-				itr2.next().setCol(col);
-				col++;
-			}
-			itr1.next().setRow(row);
-			row++;
-			col = 0;
+		Matrix matrix = new Matrix(1, size);
+		matrix.set(0, 0, 1.0);
+
+		Matrix temp = setupMatrix(size);
+		Matrix temp2 = normPageNumberLinks(temp);
+		Matrix temp3 = normMatrix(temp2);
+		Matrix temp4 = multipleMatrixByAlpha(temp3);
+
+		Matrix addMatrix = addMatrices(temp4);
+
+		double max = 99999;
+		double min = 0.00000001;
+
+		while (max >= min) {
+			Matrix copy = matrix;
+
+			matrix = matrix.times(addMatrix);
+			matrix = matrix.times(1 / matrix.normInf());
+
+			max = copy.minus(matrix).normF();
 		}
+		
+		pageRankMatrix = matrix;
+
+		rankComplete = true;
 	}
 
-	private void remakeMatrix() {
-		for(int i=0; i<matrix.getRowDimension(); i++) {
-			Matrix row = matrix.getMatrix(i, i, 0, matrix.getColumnDimension() - 1);
+	private Matrix normPageNumberLinks(Matrix matrix) {
+		int row = matrix.getRowDimension();
+		int col = 0;
+		int zero = 0;
 
-			if(row.norm2() < 1) {
-				row.timesEquals(1/matrix.getRowDimension());
-			}
-			else {
-				int count = 0;
-				for(int k=0; k<matrix.getColumnDimension(); k++) {
-					if(row.get(0, k) == 1) {
-						count++;
+		if (row > 0) {
+			col = matrix.getColumnDimension();
+		}
+
+		for (int i = 0; i < row; i++) {
+			zero = 0;
+			for (int k = 0; k < col; k++) {
+				if (matrix.get(i, k) == 0) {
+					zero++;
+				}
+				if (zero == col) {
+					for (int j = 0; j < col; j++) {
+						matrix.set(i, k, 1.0 / (double) col);
 					}
 				}
-				row.timesEquals(1/count);
-			}
-
-			matrix.setMatrix(i, i, 0, matrix.getColumnDimension() - 1, row);
-		}
-
-		matrix.timesEquals(1-a);
-		matrix.plusEquals(createAdditionMatrix(matrix.getColumnDimension()));
-	}
-
-	private Matrix createAdditionMatrix(int dimension) {
-		double[][] dummyArray = new double[dimension][dimension];
-		Matrix addMatrix = new Matrix(dummyArray);
-		for(int i=0; i<dimension; i++) {
-			for(int k=0; k<dimension; k++) {
-				addMatrix.set(i, k, a/dimension);
 			}
 		}
-		return addMatrix;
+
+		return matrix;
 	}
 
-	private void cleanMatrix() {
-		for(int i=0; i<matrix.getRowDimension(); i++) {
-			Matrix row = matrix.getMatrix(i, i, 0, matrix.getColumnDimension() - 1);
-			for(int k=0; k<10; k++) {
-				if(k == 0) {
-					row = matrix.times(row.transpose());
+	private Matrix normMatrix(Matrix matrix) {
+		int row = matrix.getRowDimension();
+		int col = 0;
+		int trackOne = 0;
+
+		if (row > 0) {
+			col = matrix.getColumnDimension();
+		}
+
+		for (int i = 0; i < row; i++) {
+			trackOne = 0;
+
+			for (int j = 0; j < col; j++) {
+				if (matrix.get(i, j) == 1) {
+					trackOne++;
+				}	
+			}
+
+			if (trackOne > 0) {
+				for (int k = 0; k < col; k++) {
+					if (matrix.get(i, k) == 1) {
+						matrix.set(i, k, 1.0 / (double) trackOne);
+					}
 				}
-				else {
-					row = matrix.times(row);
-				}
-			}
-
-			pageRanks.put(i, (float) row.normInf());
-		}
-	}
-
-	private double calculateTotal() {
-		double total = 0;
-		for(int i=0; i<matrix.getRowDimension(); i++) {
-			for(int k=0; k<matrix.getColumnDimension(); k++) {
-				total += matrix.get(i, k);
 			}
 		}
-		return total;
+
+		return matrix;
 	}
 
-	private void checkResults() {
-		for(int i = 0; i < pageRanks.size(); i++) {		
-			
-			float score = pageRanks.get(i);
-			print("Row: " + i + " Score: " + score);
+	private Matrix multipleMatrixByAlpha(Matrix matrix) {
+
+		matrix = matrix.times((1.0 - a));
+		return matrix;
+
+	}
+
+	private Matrix addMatrices(Matrix matrix) {
+		int row = matrix.getRowDimension();
+		int col = matrix.getColumnDimension();
+
+		Matrix additionMa = new Matrix(row, col, (a / (double) col));
+		Matrix result = matrix.plus(additionMa);
+
+		return result;
+	}
+
+	private Matrix setupMatrix(int size) {		
+		Multigraph<PageVertex, DefaultEdge> mutliGraph = this.graph.getGraph();
+
+		Set<DefaultEdge> edges = mutliGraph.edgeSet();
+
+		Matrix ma = new Matrix(size, size);
+
+		for (DefaultEdge edge : edges) {
+			PageVertex v1 = mutliGraph.getEdgeSource(edge);
+			PageVertex v2 = mutliGraph.getEdgeTarget(edge);
+			ma.set(v1.getId(), v2.getId(), 1.0);
 		}
 
-	}
-
-	private void print(String value) {
-		System.out.println(value);
+		return ma;
 	}
 
 	public boolean isRankComplete() {

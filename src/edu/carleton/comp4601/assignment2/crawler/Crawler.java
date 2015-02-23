@@ -204,10 +204,7 @@ public class Crawler extends WebCrawler {
 			if(doc.title() != null) {
 				myDoc.setName(doc.title());
 				myDoc.addTag(doc.title());
-			}
-
-			// TODO: Tags should be keywords not actual DOM tags
-			
+			}			
 
 			// Store all document text
 			String rawText = "";
@@ -267,12 +264,12 @@ public class Crawler extends WebCrawler {
 		String url = page.getWebURL().getURL();
 		int docId = page.getWebURL().getDocid();
 
-		PageVertex newPage = new PageVertex(docId, url, time);
+		PageVertex newPage = new PageVertex(this.crawlGraph.getIdCounter(), url, time);
 		this.crawlGraph.addVertex(newPage);
 		//System.out.println("Current vertex id is: " + docId + " and there are this many vertices: " + this.crawlGraph.idCounter);
 
 		if(parentUrl != null) {
-			PageVertex parentPage = new PageVertex(parentId, parentUrl, time);
+			PageVertex parentPage = new PageVertex(this.crawlGraph.getIdCounter(), parentUrl, time);
 			this.crawlGraph.addVertex(parentPage);
 			this.crawlGraph.addEdge(parentPage, newPage);
 
