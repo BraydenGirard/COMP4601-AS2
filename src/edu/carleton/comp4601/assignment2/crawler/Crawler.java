@@ -35,6 +35,9 @@ public class Crawler extends WebCrawler {
 
 	private Grapher crawlGraph;
 	private CrawlData data;
+	
+    public static int docId = 0;
+    public static int noCrawlId = -1;
 
 	private static final Pattern allowedPatterns = Pattern.compile(".*(\\.(pdf|png|gif|jpe?g|xls|xlsx|ppt|pptx|doc|docx?))$");
 
@@ -134,10 +137,12 @@ public class Crawler extends WebCrawler {
 		if (page.getParseData() instanceof HtmlParseData) {
 			parseHTMLToDocument(page, currentTime);
 			data.addVisitedUrl(weburl.getDocid(), weburl.getURL());
+			docId++;
 
 		} else if(page.getParseData() instanceof BinaryParseData) {
 			parseBinaryToDocument(page, currentTime);
 			data.addVisitedUrl(weburl.getDocid(), weburl.getURL());
+			docId++;
 		}
 		
 		long endTime = System.nanoTime();
@@ -162,7 +167,7 @@ public class Crawler extends WebCrawler {
 
 				String name = url.substring(url.lastIndexOf('/') + 1, url.length());
 				
-				doc.setId(page.getWebURL().getDocid());
+				doc.setId(docId);
 				
 				if(name != null) {
 					doc.setName(name);
@@ -197,7 +202,7 @@ public class Crawler extends WebCrawler {
 		try {
 			HtmlParseData htmlParseData = (HtmlParseData) page.getParseData();
 			String html = htmlParseData.getHtml();
-			int docId = page.getWebURL().getDocid();
+
 			//System.out.println("Current doc id is: " + docId);
 			Document doc = Jsoup.parse(html);
 			Elements allImages = doc.select("img[src~=(?i)\\.(png|jpe?g|gif)]");
@@ -263,23 +268,29 @@ public class Crawler extends WebCrawler {
 	 */
 	private PageVertex buildVertexForPage(Page page, long time) {
 		String parentUrl = page.getWebURL().getParentUrl();
-		int parentId = page.getWebURL().getParentDocid();
-
 		String url = page.getWebURL().getURL();
-		int docId = page.getWebURL().getDocid();
-
-		PageVertex newPage = new PageVertex(this.crawlGraph.getIdCounter(), url, time);
-		this.crawlGraph.addVertex(newPage);
+		
+		PageVertex existingPage = this.crawlGraph.findVertex(url);
+		
+		if(existingPage == null) {
+			existingPage = new PageVertex(docId, url, time);
+			this.crawlGraph.addVertex(existingPage);
+		}
+		
+		else {
+			this.crawlGraph.updateVertex(existingPage, docId);
+		}
 		//System.out.println("Current vertex id is: " + docId + " and there are this many vertices: " + this.crawlGraph.idCounter);
 
 		if(parentUrl != null) {
-			PageVertex parentPage = new PageVertex(this.crawlGraph.getIdCounter(), parentUrl, time);
-			this.crawlGraph.addVertex(parentPage);
-			this.crawlGraph.addEdge(parentPage, newPage);
+			PageVertex parentPage = this.crawlGraph.findVertex(parentUrl);
+			if(parentPage !=null) {
+				this.crawlGraph.addEdge(parentPage, existingPage);
+			}
 
 		}
 
-		return newPage;
+		return existingPage;
 	}
 
 	/**
@@ -298,9 +309,10 @@ public class Crawler extends WebCrawler {
 		} else {
 			Date date = new Date();
 			long currentTime = date.getTime();
-			PageVertex newVertex = new PageVertex(this.crawlGraph.getIdCounter(), url, currentTime);
+			PageVertex newVertex = new PageVertex(noCrawlId, url, currentTime);
 			this.crawlGraph.addVertex(newVertex);
 			this.crawlGraph.addEdge(currentPage, newVertex);
+			noCrawlId--;
 
 		}
 	}

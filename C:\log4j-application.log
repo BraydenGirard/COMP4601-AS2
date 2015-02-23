@@ -304,3 +304,14 @@
 2015-02-23 17:24:00 INFO  CrawlIndexer:100 - Indexing Document: 99
 2015-02-23 17:24:00 INFO  CrawlIndexer:191 - Done ...
 2015-02-23 17:24:00 INFO  Controller:82 - All Done Goodbye!
+2015-02-23 18:50:58 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:50:59 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:51:00 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:51:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:51:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:51:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:51:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
