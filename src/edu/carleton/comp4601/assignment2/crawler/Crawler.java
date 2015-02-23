@@ -27,6 +27,8 @@ import edu.uci.ics.crawler4j.url.WebURL;
 public class Crawler extends WebCrawler {
 
 	final static Logger logger = LoggerFactory.getLogger(Crawler.class);
+	final String homePath = System.getProperty("user.home");
+	final String luceneIndexFolder = "/data/lucene/";
 
 	private static String[] domains;
 	private long sleepTime;
@@ -62,7 +64,9 @@ public class Crawler extends WebCrawler {
 	 * 
 	 */
 	@Override
-	public void onStart() {}
+	public void onStart() {
+		
+	}
 
 	/**
 	 * 
