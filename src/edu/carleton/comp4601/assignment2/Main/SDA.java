@@ -1,5 +1,6 @@
 package edu.carleton.comp4601.assignment2.Main;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,10 +23,13 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import javax.xml.bind.JAXBElement;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.FilenameUtils;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 
+import com.google.common.io.Files;
 import com.sleepycat.je.Database;
 
 import edu.carleton.comp4601.assignment2.dao.Document;
@@ -430,11 +434,11 @@ public class SDA {
 	@Consumes(MediaType.APPLICATION_XML)
 	public Response resetDocuments(){
 		Response res;
-		DatabaseManager.getInstance().getDatabase().dropDatabase();
-		CrawlIndexerServer indexer = new CrawlIndexerServer(homePath + luceneIndexFolder);
+		
+		DatabaseManager.getInstance().getDatabase().dropDatabase();	
 		
 		try {
-			indexer.deleteIndex();
+			FileUtils.cleanDirectory(new File(homePath + luceneIndexFolder + "index-directory"));
 			res = Response.ok().build();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

@@ -3,11 +3,12 @@ package edu.carleton.comp4601.assignment2.crawler;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import edu.carleton.comp4601.assignment2.database.DatabaseManager;
 import edu.carleton.comp4601.assignment2.index.CrawlIndexer;
-import edu.carleton.comp4601.assignment2.util.FileUtils;
 import edu.uci.ics.crawler4j.crawler.CrawlConfig;
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;
@@ -56,8 +57,14 @@ public class Controller {
 		
 		logger.info("Web Crawler Controller Started");
 		
-		FileUtils.deleteFolder(new File(homePath + luceneIndexFolder));
-		FileUtils.createDirectory(homePath + luceneIndexFolder);
+		DatabaseManager.getInstance().getDatabase().dropDatabase();	
+		
+		try {
+			FileUtils.cleanDirectory(new File(homePath + luceneIndexFolder + "index-directory"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		CrawlConfig config = new CrawlConfig();
 		config.setCrawlStorageFolder(homePath + crawlStorageFolder);	
