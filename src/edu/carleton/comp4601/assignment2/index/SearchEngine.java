@@ -18,21 +18,22 @@ public class SearchEngine {
 	private IndexSearcher searcher = null;
 	private QueryParser parser = null;
 
-	/** Creates a new instance of SearchEngine */
+	//Creates a new instance of search engine
 	public SearchEngine(String dirPath) throws IOException {
 		searcher = new IndexSearcher(DirectoryReader.open(FSDirectory.open(new File(dirPath + "index-directory"))));
 		parser = new QueryParser("content", new StandardAnalyzer());
 	}
-
+	
+	//Searches the index based on query and number of results
 	public TopDocs performSearch(String queryString, int n)
 			throws IOException, ParseException {
 		Query query = parser.parse(queryString);        
 		return searcher.search(query, n);
 	}
-
+	
+	//Gets a lucene document back by document id
 	public Document getDocument(int docId)
 			throws IOException {
 		return searcher.doc(docId);
 	}
-
 }
