@@ -49,21 +49,21 @@ public class PageRankManager {
 		}
 	}
 	
+	/**
+	 * Finds the result of all the page rank computations for all the documents and returns them
+	 * in a tuple. Returns null if rank computation is not finished.
+	 * 
+	 * @return tuple or null Tuple if complete null if not
+	 */
 	public Tuple<ArrayList<String>, ArrayList<Float>> getPageRank() {
 
 		if(rankComplete) {
 			
-			
 			ArrayList<Document> allDocuments = DatabaseManager.getInstance().getDocuments();
 			System.out.println("There are: " + allDocuments.size() + " documents");
-			//System.out.println("There are: " + currentVertices.size() + " vertices");
+			
 			ArrayList<String> documentTitle = new ArrayList<String>();
 			ArrayList<Float> documentRank = new ArrayList<Float>();
-
-			Multigraph<PageVertex, DefaultEdge> mutliGraph = this.graph.getGraph();
-			
-			System.out.println(pageRankMatrix.getRowDimension());
-			System.out.println(pageRankMatrix.getColumnDimension());
 			
 			for(int i=0; i < allDocuments.size(); i++) {
 				Document doc = allDocuments.get(i);
@@ -72,46 +72,6 @@ public class PageRankManager {
 				documentRank.add((float) pageRankMatrix.get(0, i));
 			}
 			
-			/*
-			for(int i=0; i<allDocuments.size(); i++) {
-				for(int j=0; j < currentVertices.size(); j++) {
-					Document doc = allDocuments.get(i);
-					int docId = doc.getId();
-					int vertexId = v.getId();
-				
-					if(docId == vertexId) {
-						float score = (float) pageRankMatrix.get(i, 0);
-						documentTitle.add(doc.getName());
-						documentRank.add(score);
-					}
-				}
-				for (DefaultEdge edge : mutliGraph.edgeSet()) {
-					PageVertex v1 = mutliGraph.getEdgeSource(edge);
-					PageVertex v2 = mutliGraph.getEdgeTarget(edge);
-					
-					int v1Id = v1.getId();
-					int v2Id = v2.getId();
-					
-					if(v1Id == docId) {
-						float score = (float) pageRankMatrix.get(v1Id, v2Id);
-						documentTitle.add(doc.getName());
-						documentRank.add(score);
-					}
-				}
-				
-			}*/
-			
-			/*
-			for(int i=0; i<allDocuments.size(); i++) {
-				for(PageVertex v: currentVertices) {
-					int vertexId = v.getId();
-					int documentId = allDocuments.get(i).getId();
-					if(vertexId == documentId) {
-						documentTitle.add(allDocuments.get(i).getName());
-						documentRank.add((float) pageRanks.get(v.getRow()));
-					}
-				}
-			}*/
 			return new Tuple<ArrayList<String>, ArrayList<Float>>(documentTitle, documentRank);
 		}
 
@@ -119,21 +79,24 @@ public class PageRankManager {
 	}
 	
 	/**
-	 * TODO: This wont work
-	 * @param docId
-	 * @return
+	 * Returns a given docIds page rank score
+	 * 
+	 * @param docId A doc Id to find the rank for
+	 * @return documentRank a float rank score
 	 */
 	public float getDocumentPageRank(int docId) {
 
-		float documentRank = 0;
-
-		documentRank = (float) pageRankMatrix.get(0, docId);
+		float documentRank = (float) pageRankMatrix.get(0, docId);
 
 		rankComplete = true;
 
 		return documentRank;
 	}
 
+	/**
+	 * Runs the page rank algorithm on a graph and computes the steady state
+	 * probabilities. Sets the rankComplete flag to true when its done. 
+	 */
 	public void computePageRank() {
 		this.currentVertices = this.graph.getGraph().vertexSet();
 		
@@ -166,6 +129,12 @@ public class PageRankManager {
 		rankComplete = true;
 	}
 
+	/**
+	 * Normalizes the matrix as part of remaking the adjacency matrix 
+	 * 
+	 * @param matrix The current matrix state
+	 * @return matrix The new matrix state
+	 */
 	private Matrix normPageNumberLinks(Matrix matrix) {
 		int row = matrix.getRowDimension();
 		int col = 0;
@@ -192,28 +161,34 @@ public class PageRankManager {
 		return matrix;
 	}
 
+	/**
+	 * Normalizes the matrix as part of remaking the adjacency matrix 
+	 * 
+	 * @param matrix The current matrix state
+	 * @return matrix The new matrix state
+	 */
 	private Matrix normMatrix(Matrix matrix) {
 		int row = matrix.getRowDimension();
 		int col = 0;
-		int trackOne = 0;
+		int one = 0;
 
 		if (row > 0) {
 			col = matrix.getColumnDimension();
 		}
 
 		for (int i = 0; i < row; i++) {
-			trackOne = 0;
+			one = 0;
 
 			for (int j = 0; j < col; j++) {
 				if (matrix.get(i, j) == 1) {
-					trackOne++;
+					one++;
 				}	
 			}
 
-			if (trackOne > 0) {
+			if (one > 0) {
 				for (int k = 0; k < col; k++) {
 					if (matrix.get(i, k) == 1) {
-						matrix.set(i, k, 1.0 / (double) trackOne);
+						matrix.set(i, k, 1.0 / (double) one);
 					}
 				}
 			}
@@ -222,6 +197,12 @@ public class PageRankManager {
 		return matrix;
 	}
 
+	/**
+	 * Multiplies a given matrix by the 1 - the alpha value
+	 * 
+	 * @param matrix The current matrix state
+	 * @return matrix The new matrix state
+	 */
 	private Matrix multipleMatrixByAlpha(Matrix matrix) {
 
 		matrix = matrix.times((1.0 - a));
@@ -229,6 +210,12 @@ public class PageRankManager {
 
 	}
 
+	/**
+	 * Add α/N to every entry of the resulting matrix, to obtain our probability matrix.
+	 * 
+	 * @param matrix The current matrix state
+	 * @return result the probability matrix
+	 */
 	private Matrix addMatrices(Matrix matrix) {
 		int row = matrix.getRowDimension();
 		int col = matrix.getColumnDimension();
@@ -239,6 +226,13 @@ public class PageRankManager {
 		return result;
 	}
 
+	/**
+	 * Looks through the edge set and sets all vertices with edges to 1 in a new
+	 * matrix of a given size
+	 * 
+	 * @param size The number of rows and columns in the matrix
+	 * @return ma The initial matrix
+	 */
 	private Matrix setupMatrix(int size) {		
 		Multigraph<PageVertex, DefaultEdge> mutliGraph = this.graph.getGraph();
 
@@ -255,6 +249,11 @@ public class PageRankManager {
 		return ma;
 	}
 
+	/**
+	 * Returns if the page rank process is complete or not
+	 * 
+	 * @return rankComplete true if complete false if not
+	 */
 	public boolean isRankComplete() {
 		return rankComplete;
 	}
