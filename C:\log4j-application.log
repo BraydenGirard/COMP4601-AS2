@@ -1267,3 +1267,12 @@
 2015-02-23 22:31:43 INFO  Controller:58 - Web Crawler Controller Started
 2015-02-23 22:31:43 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
 2015-02-23 22:31:45 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 23:11:51 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 23:11:52 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 23:11:54 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 23:14:13 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 23:14:13 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 23:14:16 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 23:14:30 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 23:14:30 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 23:14:32 INFO  CrawlController:165 - Crawler 1 started

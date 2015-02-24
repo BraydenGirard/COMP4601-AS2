@@ -71,7 +71,7 @@ public class Controller {
 		config.setPolitenessDelay(300);
 		config.setIncludeBinaryContentInCrawling(true);
 		
-		//config.setMaxPagesToFetch(100); // TODO: Remove limit for submission
+		config.setMaxPagesToFetch(100); // TODO: Remove limit for submission
 
 		Crawler.configure(crawlDomains);
 		CrawlController controller = initController(config, crawlDomains);
