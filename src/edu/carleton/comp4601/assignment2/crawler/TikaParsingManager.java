@@ -21,6 +21,11 @@ public class TikaParsingManager {
 		TikaParsingManager.instance = instance;
 	}
 	
+	/**
+	 * Tika singleton access
+	 * 
+	 * @return instance The singleton
+	 */
 	public static TikaParsingManager getInstance() {
 
 		if (instance == null)
@@ -29,6 +34,13 @@ public class TikaParsingManager {
 
 	}
 	
+	/**
+	 * Parses the metadata from a inputstream using the auto parser
+	 * 
+	 * @param is an inputstream of data
+	 * @return metadata the Metadata object
+	 * @throws Exception a Tika exception
+	 */
 	public Metadata parseUsingAutoDetect(InputStream is) throws Exception {
 		Parser parser = new AutoDetectParser();
 		Metadata metadata = new Metadata();
@@ -44,7 +56,13 @@ public class TikaParsingManager {
 		return metadata;
 	}
 	
-	
+	/**
+	 * Parses the metadata from a inputstream using the png parser
+	 * 
+	 * @param is an inputstream of data
+	 * @return metadata the Metadata object
+	 * @throws Exception a Tika exception
+	 */
 	public Metadata parseMetadataForPNG(InputStream is) throws Exception {
 		Metadata metadata = new Metadata();
 		metadata.set(Metadata.CONTENT_TYPE, "image/png");
@@ -58,6 +76,13 @@ public class TikaParsingManager {
 		return metadata;
 	}
 	
+	/**
+	 * Parses the metadata from a inputstream using the pdf parser
+	 * 
+	 * @param is an inputstream of data
+	 * @return metadata the Metadata object
+	 * @throws Exception a Tika exception
+	 */
 	public Metadata parseMetadataForPDF(InputStream is) throws Exception {
 		Metadata metadata = new Metadata();
 		ContentHandler handler = new BodyContentHandler();
@@ -71,6 +96,13 @@ public class TikaParsingManager {
 		return metadata;
 	}
 	
+	/**
+	 * Parses the metadata from a inputstream using the office parser
+	 * 
+	 * @param is an inputstream of data
+	 * @return metadata the Metadata object
+	 * @throws Exception a Tika exception
+	 */
 	public Metadata parseMetadataForDOC(InputStream is) throws Exception {
 		Metadata metadata = new Metadata();
 		ContentHandler handler = new BodyContentHandler();

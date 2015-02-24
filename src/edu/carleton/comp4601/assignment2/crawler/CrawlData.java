@@ -27,6 +27,12 @@ public class CrawlData {
 		this.documentMap = documentMap;
 	}
 	
+	/**
+	 * Adds a doc and docId to the visited documents map
+	 * 
+	 * @param docId
+	 * @param doc
+	 */
 	public synchronized void addVisitedDocument(int docId, edu.carleton.comp4601.assignment2.dao.Document doc) {
 		this.documentMap.put(docId, doc);
 	}
@@ -39,6 +45,12 @@ public class CrawlData {
 		this.imageAltMap = imageAltMap;
 	}
 	
+	/**
+	 * Adds a image alt list with a doc id to the image alts map
+	 * 
+	 * @param docId
+	 * @param alts
+	 */
 	public synchronized void addVisitedImageAltList(int docId, ArrayList<String> alts) {
 		this.imageAltMap.put(docId, alts);
 	}
@@ -46,11 +58,17 @@ public class CrawlData {
 	public synchronized ConcurrentHashMap<Integer, Metadata> getMetadataMap() {
 		return metadataMap;
 	}
-
+	
 	public synchronized void setMetadataMap(ConcurrentHashMap<Integer, Metadata> metadataMap) {
 		this.metadataMap = metadataMap;
 	}
 	
+	/**
+	 * Adds a metadata object its doc id to the metadata map
+	 * 
+	 * @param docId
+	 * @param data
+	 */
 	public synchronized void addVisitedMetadata(int docId, Metadata data) {
 		this.metadataMap.put(docId, data);
 	}
@@ -63,6 +81,12 @@ public class CrawlData {
 		this.urlMap = urlMap;
 	}
 	
+	/**
+	 * Adds a visited url to the url map with a doc Id
+	 * 
+	 * @param docId
+	 * @param url
+	 */
 	public synchronized void addVisitedUrl(int docId, String url) {
 		this.urlMap.put(docId, url);
 	}

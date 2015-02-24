@@ -26,21 +26,26 @@ import edu.uci.ics.crawler4j.url.WebURL;
 
 public class Crawler extends WebCrawler {
 
+	// Utility
 	final static Logger logger = LoggerFactory.getLogger(Crawler.class);
 	final String homePath = System.getProperty("user.home");
 	final String luceneIndexFolder = "/data/lucene/";
 
+	// Crawler requirements
 	private static String[] domains;
 	private long sleepTime;
 
+	// Data collection objects
 	private Grapher crawlGraph;
 	private CrawlData data;
 	
+	// Static doc id for keeping track of vertices and pages
     public static int docId = 0;
-    public static int noCrawlId = -1;
 
+	@SuppressWarnings("unused")
 	private static final Pattern allowedPatterns = Pattern.compile(".*(\\.(pdf|png|gif|jpe?g|xls|xlsx|ppt|pptx|doc|docx?))$");
 
+	// Extensions to avoid
 	private static final Pattern BINARY_FILES_EXTENSIONS =
 			Pattern.compile(".*\\.(ico|xaml|pict|rif|ps|css|js" +
 					"|mid|mp2|mp3|mp4|wav|wma|au|aiff|flac|ogg|3gp|aac|amr|au|vox" +
@@ -55,14 +60,17 @@ public class Crawler extends WebCrawler {
 	}
 
 	/**
+	 * Sets the domains from the controller for shouldVisit logic
 	 * 
-	 * @param domain
-	 * @param lucenePath
+	 * @param domain A string array of domains to visit
 	 */
 	public static void configure(String[] domain) {
 		domains = domain;
 	}
 
+	/**
+	 * Called before the crawler thread exits. Serializes the graph and writes to the database.
+	 */
 	@Override
 	public void onBeforeExit() {
 		try {
@@ -110,6 +118,7 @@ public class Crawler extends WebCrawler {
 
 		long startTime = System.nanoTime();
 		
+		// Adaptive sleep
 		try {
 			Thread.sleep(this.sleepTime);
 
@@ -134,6 +143,7 @@ public class Crawler extends WebCrawler {
 			docId++;
 		}
 		
+		// Adaptive calculation 
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime);
 		this.sleepTime = duration * 2;
@@ -147,6 +157,8 @@ public class Crawler extends WebCrawler {
 	private void parseBinaryToDocument(Page page, long currentTime) {
 
 		try {
+			
+			// Send stream to tika to parse it
 			InputStream inputStream = new ByteArrayInputStream(page.getContentData());
 			Metadata metadata = TikaParsingManager.getInstance().parseUsingAutoDetect(inputStream);
 			String url = page.getWebURL().getURL();
@@ -154,6 +166,7 @@ public class Crawler extends WebCrawler {
 			if(metadata != null) {
 				edu.carleton.comp4601.assignment2.dao.Document doc = new edu.carleton.comp4601.assignment2.dao.Document();
 
+				// Get the name from the URL in case metadata lacks a name
 				String name = url.substring(url.lastIndexOf('/') + 1, url.length());
 				
 				doc.setId(docId);
@@ -162,12 +175,14 @@ public class Crawler extends WebCrawler {
 					doc.setName(name);
 				}
 
+				// Add document and metadata
 				data.addVisitedDocument(doc.getId(), doc);
 				data.addVisitedMetadata(doc.getId(), metadata);
 
 				// Graph the page
 				buildVertexForPage(page, currentTime);
 
+				// Add document to DB
 				DatabaseManager.getInstance().addNewDocument(doc);
 
 			} else {
@@ -189,10 +204,9 @@ public class Crawler extends WebCrawler {
 	private void parseHTMLToDocument(Page page, long currentTime) {
 
 		try {
+			// Get basic page properties 
 			HtmlParseData htmlParseData = (HtmlParseData) page.getParseData();
 			String html = htmlParseData.getHtml();
-
-			//System.out.println("Current doc id is: " + docId);
 			Document doc = Jsoup.parse(html);
 			Elements allImages = doc.select("img[src~=(?i)\\.(png|jpe?g|gif)]");
 			Elements allText = doc.select("p,h1,h2,h3,h4,h5");
@@ -239,29 +253,29 @@ public class Crawler extends WebCrawler {
 
 			}
 
+			// Add document to visited and add to DB
 			data.addVisitedDocument(myDoc.getId(), myDoc);
 			DatabaseManager.getInstance().addNewDocument(myDoc);
 		
 		} catch (Exception e) {
 			logger.warn("Exception parsing HTML: " + e.getMessage());
 			logger.info(page.getWebURL().getURL());
+			
 		}
 	}
 
 	/**
 	 * Builds and adds the graph vertex for a given page and returns it.
 	 * 
-	 * @param page
-	 * @param time
-	 * @return
+	 * @param page The current page crawled
+	 * @param time The current time in long
+	 * @return existingPage The current page vertex
 	 */
 	private PageVertex buildVertexForPage(Page page, long time) {
 		String parentUrl = page.getWebURL().getParentUrl();
 		String url = page.getWebURL().getURL();
 		
 		PageVertex existingPage = this.crawlGraph.findVertex(url);
-		
-		
 		
 		if(existingPage == null) {
 			existingPage = new PageVertex(docId, url, time);
@@ -280,11 +294,10 @@ public class Crawler extends WebCrawler {
 	}
 
 	/**
-	 * Adds a vertex for a given url if it doesn't exist in the graph. Maps
-	 * edges to the vertex and the current pages vertex.
+	 * Maps edges to the vertex and the current pages vertex.
 	 * 
-	 * @param url
-	 * @param currentPage
+	 * @param url A URL to search for vertices
+	 * @param currentPage The current page vertex
 	 */
 	private void addOutGoingLinkToGraph(String url, PageVertex currentPage) {
 		PageVertex vertex = this.crawlGraph.findVertex(url);

@@ -24,15 +24,16 @@ public class Controller {
 	final static String crawlStorageFolder = "/data/crawl/root";
 	final static String luceneIndexFolder = "/data/lucene/";
 	final static int numberOfThreads = 1;
-	final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/" };
-	//final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://daydreamdev.com" };
+	//final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/" };
+	final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://daydreamdev.com" };
 	
 	/**
+	 * Initializes a crawl controller and adds all the seed domains
 	 * 
-	 * @param config
-	 * @param domains
-	 * @return
-	 * @throws Exception
+	 * @param config A Crawler4j configuation object 
+	 * @param domains A String array of all the domains to crawl
+	 * @return controller A controller
+	 * @throws Exception A general exception
 	 */
 	public static CrawlController initController(CrawlConfig config, String[] domains) throws Exception {
 
@@ -49,6 +50,8 @@ public class Controller {
 	}
 
 	/**
+	 * The Main crawler control point. Drops the database, cleans the lucene directory, calls the controller
+	 * and crawler configuration and calls the lucene indexing
 	 * 
 	 * @param args
 	 * @throws Exception

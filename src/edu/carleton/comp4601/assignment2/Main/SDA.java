@@ -518,8 +518,9 @@ public class SDA {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-	
-		return documentsToHTML(result.getDocs());
+		
+		ArrayList<Document> documents = result.getDocs();
+		return documentsToHTML(documents);
 	}
 	
 	@GET
