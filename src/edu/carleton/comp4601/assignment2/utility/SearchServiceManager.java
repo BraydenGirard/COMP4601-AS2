@@ -36,7 +36,7 @@ public class SearchServiceManager {
 
 	public SearchServiceManager() {
 		logger = Logger.getGlobal();
-		uniqueName = SDAConstants.COMP4601SDA + hashCode();
+		uniqueName = SDAConstants.SERVICENAME + hashCode();
 		dirServices = new ConcurrentHashMap<String, JSONObject>();
 		timer = new Timer();
 		timer.scheduleAtFixedRate(new AskDirectoryServer(), SDAConstants.ONE_MINUTE,

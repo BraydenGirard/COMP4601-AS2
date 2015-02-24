@@ -66,6 +66,4 @@ public class CrawlData {
 	public synchronized void addVisitedUrl(int docId, String url) {
 		this.urlMap.put(docId, url);
 	}
-	
-	
 }

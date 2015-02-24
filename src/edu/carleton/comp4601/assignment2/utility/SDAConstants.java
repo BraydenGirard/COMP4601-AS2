@@ -17,7 +17,8 @@ public class SDAConstants {
 	public static final String QUERY = "query";
 	public static final long ONE_MINUTE = 1000 * 60;
 	public static final String HTTP = "http://";
-	public static final String DESCRIPTION = "COMP 4601 Search Engine";
+	public static final String DESCRIPTION = "Ben & Brayden's Search Engine";
+	public static final String SERVICENAME = "The Legion";
 	public static String ENGINE_URL = null;
 
 	static {
