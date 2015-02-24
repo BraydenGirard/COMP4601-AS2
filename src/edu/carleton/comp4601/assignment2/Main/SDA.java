@@ -24,13 +24,9 @@ import javax.ws.rs.core.UriInfo;
 import javax.xml.bind.JAXBElement;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
-
-import com.google.common.io.Files;
-import com.sleepycat.je.Database;
 
 import edu.carleton.comp4601.assignment2.dao.Document;
 import edu.carleton.comp4601.assignment2.database.DatabaseManager;
@@ -49,7 +45,6 @@ public class SDA {
 	@Context
 	Request request;
 
-	//final private String PATH = "http://localhost:8080/COMP4601SDA/rest/sda";
 	final String homePath = System.getProperty("user.home");
 	final String luceneIndexFolder = "/data/lucene/";
 	
@@ -109,37 +104,7 @@ public class SDA {
 
 		return documentsToHTML(documents);
 	}
-/*
-	// Gets all documents with the given tag string as XML
-	@GET
-	@Path("search/{tags}")
-	@Produces(MediaType.APPLICATION_XML)
-	@Consumes(MediaType.APPLICATION_XML)
-	public ArrayList<Document> getDocumentsByTagXML(@PathParam("tags") String tags) {
-		ArrayList<Document> documents = DatabaseManager.getInstance().findDocumentsByTag(splitTags(tags));
 
-		if(documents == null) {
-			throw new RuntimeException("No documents exist");
-		}
-
-		return documents;
-	}
-
-	// Gets all documents with the given tag string as HTML
-	@GET
-	@Path("search/{tags}")
-	@Produces(MediaType.TEXT_HTML)
-	@Consumes(MediaType.APPLICATION_XML)
-	public String getDocumentsByTagHTML(@PathParam("tags") String tags) {
-		ArrayList<Document> documents = DatabaseManager.getInstance().findDocumentsByTag(splitTags(tags));
-
-		if(documents == null) {
-			return get204();
-		}
-
-		return documentsToHTML(documents);
-	}
-*/
 	// Deletes a document with a given tag string and returns a HTTP code
 	@GET
 	@Path("delete/{tags}")
@@ -512,7 +477,7 @@ public class SDA {
 		return res;
 	}
 	
-	//18.5 Boost document relevance
+	//18.5 Reset document boost to 1
 	@GET
 	@Path("noboost")
 	@Consumes(MediaType.APPLICATION_XML)
@@ -637,6 +602,7 @@ public class SDA {
 		}
 	}
 	
+	//Gets all documents from lucene query 
 	public ArrayList<Document> getDocumentsFromHits(ScoreDoc[] hits, SearchEngine searchEngine) throws IOException {
 		ArrayList<Document> documents = new ArrayList<Document>();
 		for (int i = 0; i < hits.length; i++) {

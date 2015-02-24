@@ -37,14 +37,14 @@ public class CrawlIndexerServer {
 	
 	private edu.carleton.comp4601.assignment2.dao.Document document;
 	
-	/** Creates a new instance of Indexer */
+	//Creates a new instance of Indexer with a document
 	public CrawlIndexerServer(String dirPath, edu.carleton.comp4601.assignment2.dao.Document document) {
 		this.count = 0;
 		this.dirPath = dirPath;
 		this.document = document;
 	}
 	
-	/** Creates a new instance of Indexer */
+	//Creates a new instance of Indexer with a path
 	public CrawlIndexerServer(String dirPath) {
 		this.count = 0;
 		this.dirPath = dirPath;
@@ -53,12 +53,7 @@ public class CrawlIndexerServer {
 
 	private IndexWriter indexWriter = null;
 
-	/**
-	 * 
-	 * @param create
-	 * @return
-	 * @throws IOException
-	 */
+	//Gets the instance of indexWriter if it does not exist already
 	private IndexWriter getIndexWriter(boolean create) throws IOException {
 		if (indexWriter == null) {
 			Directory indexDir = FSDirectory.open(new File( this.dirPath + "index-directory" ));
@@ -68,23 +63,14 @@ public class CrawlIndexerServer {
 		return indexWriter;
 	}    
 
-	/**
-	 * 
-	 * @throws IOException
-	 */
+	//Closes the index writer
 	private void closeIndexWriter() throws IOException {
 		if (indexWriter != null) {
 			indexWriter.close();
 		}
 	}
 
-	/**
-	 * 
-	 * @param document
-	 * @param imageAlts
-	 * @param data
-	 * @throws IOException
-	 */
+	//Indexes an html document
 	public void indexHTMLDocument() throws IOException {
 		
 		logger.info("Indexing Document: " + this.count);
@@ -119,8 +105,6 @@ public class CrawlIndexerServer {
 		
 		
 		doc.add(new StringField("mimeType", "text/html", Field.Store.YES));
-			
-	
 		
 		String contents = document.getName() + " " + document.getText();
 		doc.add(new TextField("contents", contents, Field.Store.YES));	
@@ -132,13 +116,7 @@ public class CrawlIndexerServer {
 		this.closeIndexWriter();
 	}  
 	
-	/**
-	 * 
-	 * @param document
-	 * @param imageAlts
-	 * @param data
-	 * @throws IOException
-	 */
+	//Boosts the index of a document based on the value passed
 	public void indexHTMLDocumentWithBoost(float boost, IndexWriter writer) throws IOException {
 		FieldType myStringType = new FieldType(StringField.TYPE_STORED);
 		myStringType.setOmitNorms(false);
@@ -180,7 +158,7 @@ public class CrawlIndexerServer {
 		}
 		
 		Date date = new Date();
-		//Field field = new LongField("date", date.getTime(), Field.Store.YES);
+
 		Field field = new Field("date", date.toString(), myStringType);
 		field.setBoost(boost);
 		doc.add(field);
@@ -202,6 +180,7 @@ public class CrawlIndexerServer {
 		this.count++;
 	}  
 	
+	//Updates the index of a document when it is updated
 	public void updateHtmlDocument() throws IOException {
 		logger.info("Updating Document: " + this.count);
 		IndexWriter writer = getIndexWriter(false);
@@ -234,11 +213,8 @@ public class CrawlIndexerServer {
 		Date date = new Date();
 		doc.add(new StringField("date", date.toString(), Field.Store.YES));
 		
-		
 		doc.add(new StringField("mimeType", "text/html", Field.Store.YES));
 			
-	
-		
 		String contents = document.getName() + " " + document.getText();
 		doc.add(new TextField("contents", contents, Field.Store.YES));	
 		doc.add(new TextField("i", "ben", Field.Store.YES));	
@@ -251,6 +227,7 @@ public class CrawlIndexerServer {
 		this.closeIndexWriter();
 	}
 	
+	//Applies a boost to all documents
 	public void applyBoost() throws IOException, ParseException {
 		logger.info("Boosting Documents: " + this.count);
 		
@@ -269,6 +246,7 @@ public class CrawlIndexerServer {
 		this.closeIndexWriter();
 	}
 	
+	//Removes a boost from all documents
 	public void removeBoost() throws IOException, ParseException {
 		logger.info("Removing boost: " + this.count);
 		
@@ -287,12 +265,14 @@ public class CrawlIndexerServer {
 		}
 		
 		this.closeIndexWriter();	
-	}
+	}	
 	
+	//Clears the index
 	public void deleteIndex() throws IOException {
 		getIndexWriter(true);
 	}
 	
+	//Gets all documents from a lucene document query
 	public ArrayList<edu.carleton.comp4601.assignment2.dao.Document> getDocumentsFromHits(ScoreDoc[] hits, SearchEngine searchEngine) throws IOException {
 		ArrayList<edu.carleton.comp4601.assignment2.dao.Document> documents = new ArrayList<edu.carleton.comp4601.assignment2.dao.Document>();
 		for (int i = 0; i < hits.length; i++) {

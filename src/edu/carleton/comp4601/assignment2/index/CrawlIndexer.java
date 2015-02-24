@@ -11,7 +11,6 @@ import java.util.Map.Entry;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
-import org.apache.lucene.document.LongField;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
@@ -38,7 +37,7 @@ public class CrawlIndexer {
 	private HashMap<Integer, Metadata> metadataMap;
 	private HashMap<Integer, String> urlMap;
 	
-	/** Creates a new instance of Indexer */
+	//Creates a new instance of Indexer
 	public CrawlIndexer(String dirPath, List<Object> localDataList) {
 		this.count = 0;
 		this.dirPath = dirPath;
@@ -57,18 +56,11 @@ public class CrawlIndexer {
 			urlMap.putAll(data.getUrlMap());
 			documentMap.putAll(data.getDocumentMap());
 		}
-		
-		//this.documentMap = DatabaseManager.getInstance().getDocumentsAsMap();
 	}
 
 	private IndexWriter indexWriter = null;
 
-	/**
-	 * 
-	 * @param create
-	 * @return
-	 * @throws IOException
-	 */
+	//Gets an instance of the indexWriter if it does not exist
 	private IndexWriter getIndexWriter(boolean create) throws IOException {
 		if (indexWriter == null) {
 			Directory indexDir = FSDirectory.open(new File( this.dirPath + "index-directory" ));
@@ -78,23 +70,14 @@ public class CrawlIndexer {
 		return indexWriter;
 	}    
 
-	/**
-	 * 
-	 * @throws IOException
-	 */
+	//Closes the index writer
 	private void closeIndexWriter() throws IOException {
 		if (indexWriter != null) {
 			indexWriter.close();
 		}
 	}
 
-	/**
-	 * 
-	 * @param myDocument
-	 * @param imageAlts
-	 * @param data
-	 * @throws IOException
-	 */
+	//Takes an html document and indexes it
 	private void indexHTMLDocument(edu.carleton.comp4601.assignment2.dao.Document myDocument, ArrayList<String> imageAlts, Metadata data, String url) throws IOException {
 		
 		logger.info("Indexing Document: " + this.count);
@@ -166,13 +149,7 @@ public class CrawlIndexer {
 		this.count++;
 	}   
 
-	/**
-	 * 
-	 * @param documentMap
-	 * @param imageAltMap
-	 * @param metadataMap
-	 * @throws IOException
-	 */
+	//Takes all crawl data and rebuilds the index
 	public void rebuildIndexes() throws IOException {
 		
 		logger.info("Total Documents with Image Alts: " + this.imageAltMap.size());
@@ -192,6 +169,5 @@ public class CrawlIndexer {
 		
 		// Close the index writer when done
 		closeIndexWriter();
-	}    
-	
+	}    	
 }

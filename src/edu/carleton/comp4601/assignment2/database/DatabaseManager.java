@@ -50,6 +50,7 @@ public class DatabaseManager {
 
 	}
 	
+	//Adds a new graph to the mongo database
 	public synchronized boolean addNewGraph(String name, byte[] graph) {
 		try {
 			DBCollection col = db.getCollection(GRAPH);
@@ -65,6 +66,7 @@ public class DatabaseManager {
 		return true;
 	}
 	
+	//Gets a graph from the mongo database
 	public synchronized byte[] getGraphData(String name) {
 
 		try {
