@@ -24,8 +24,8 @@ public class Controller {
 	final static String crawlStorageFolder = "/data/crawl/root";
 	final static String luceneIndexFolder = "/data/lucene/";
 	final static int numberOfThreads = 1;
-	//final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/" };
-	final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://daydreamdev.com" };
+	final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/" };
+	//final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://daydreamdev.com" };
 	
 	/**
 	 * Initializes a crawl controller and adds all the seed domains
