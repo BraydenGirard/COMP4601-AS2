@@ -67,7 +67,7 @@ public class Grapher implements Serializable {
 		PageVertex updatedVertex = oldVertex;
 		updatedVertex.setId(newId);
 		this.graph.addVertex(updatedVertex);
-		
+		System.out.println("Hello world");
 		for (PageVertex vertex : getVertices().values()) {
 		    if(this.graph.containsEdge(oldVertex, vertex)) {
 		    	this.graph.removeEdge(oldVertex, vertex);

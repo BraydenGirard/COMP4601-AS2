@@ -272,14 +272,12 @@ public class Crawler extends WebCrawler {
 		
 		PageVertex existingPage = this.crawlGraph.findVertex(url);
 		
+		
+		
 		if(existingPage == null) {
 			existingPage = new PageVertex(docId, url, time);
 			this.crawlGraph.addVertex(existingPage);
-		}
-		
-		else {
-			this.crawlGraph.updateVertex(existingPage, docId);
-		}
+		} 
 		//System.out.println("Current vertex id is: " + docId + " and there are this many vertices: " + this.crawlGraph.idCounter);
 
 		if(parentUrl != null) {
@@ -304,16 +302,9 @@ public class Crawler extends WebCrawler {
 		PageVertex vertex = this.crawlGraph.findVertex(url);
 
 		if(vertex != null) {
-			this.crawlGraph.addEdge(currentPage, vertex);
-
-		} else {
-			Date date = new Date();
-			long currentTime = date.getTime();
-			PageVertex newVertex = new PageVertex(noCrawlId, url, currentTime);
-			this.crawlGraph.addVertex(newVertex);
-			this.crawlGraph.addEdge(currentPage, newVertex);
-			noCrawlId--;
-
+			if(!this.crawlGraph.getGraph().containsEdge(currentPage, vertex)) {
+				this.crawlGraph.addEdge(currentPage, vertex);
+			}	
 		}
 	}
 }

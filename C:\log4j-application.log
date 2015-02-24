@@ -315,3 +315,711 @@
 2015-02-23 18:51:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
 2015-02-23 18:51:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
 2015-02-23 18:51:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:51:39 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:51:39 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:51:41 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:51:43 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:43 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:51:43 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:43 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:51:43 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:43 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:51:44 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:44 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:51:44 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:44 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-678.html
+2015-02-23 18:51:44 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:44 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-994.html
+2015-02-23 18:51:44 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:44 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-40.html
+2015-02-23 18:51:45 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:45 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-363.html
+2015-02-23 18:51:45 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:45 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-194.html
+2015-02-23 18:51:45 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:45 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-701.html
+2015-02-23 18:51:46 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:46 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-532.html
+2015-02-23 18:51:46 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:46 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-847.html
+2015-02-23 18:51:46 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:46 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-977.html
+2015-02-23 18:51:47 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:47 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-177.html
+2015-02-23 18:51:47 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:47 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-216.html
+2015-02-23 18:51:47 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:47 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-662.html
+2015-02-23 18:51:47 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:47 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-734.html
+2015-02-23 18:51:48 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:48 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-396.html
+2015-02-23 18:51:48 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:48 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-515.html
+2015-02-23 18:51:48 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:48 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-476.html
+2015-02-23 18:51:49 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:49 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-249.html
+2015-02-23 18:51:49 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:49 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-814.html
+2015-02-23 18:51:49 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:49 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-920.html
+2015-02-23 18:51:50 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:50 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-881.html
+2015-02-23 18:51:50 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:50 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-120.html
+2015-02-23 18:51:50 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:50 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-695.html
+2015-02-23 18:51:50 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:51 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-39.html
+2015-02-23 18:51:51 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:51 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-548.html
+2015-02-23 18:51:51 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:51 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-200.html
+2015-02-23 18:51:52 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:52 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-329.html
+2015-02-23 18:51:52 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:52 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-961.html
+2015-02-23 18:51:52 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:52 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-161.html
+2015-02-23 18:51:52 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:52 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-73.html
+2015-02-23 18:51:53 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:53 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-758.html
+2015-02-23 18:51:53 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:53 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-589.html
+2015-02-23 18:51:53 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:53 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-897.html
+2015-02-23 18:51:54 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:54 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-330.html
+2015-02-23 18:51:54 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:54 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-919.html
+2015-02-23 18:51:54 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:54 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-144.html
+2015-02-23 18:51:54 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:54 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-90.html
+2015-02-23 18:51:55 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:55 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-775.html
+2015-02-23 18:51:55 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:55 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-283.html
+2015-02-23 18:51:55 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:55 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-944.html
+2015-02-23 18:51:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-7.html
+2015-02-23 18:51:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-170.html
+2015-02-23 18:51:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-460.html
+2015-02-23 18:51:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-119.html
+2015-02-23 18:51:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-888.html
+2015-02-23 18:51:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-305.html
+2015-02-23 18:51:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-274.html
+2015-02-23 18:51:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-582.html
+2015-02-23 18:51:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-831.html
+2015-02-23 18:51:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-299.html
+2015-02-23 18:51:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-970.html
+2015-02-23 18:51:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-903.html
+2015-02-23 18:51:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:51:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-784.html
+2015-02-23 18:52:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-346.html
+2015-02-23 18:52:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-573.html
+2015-02-23 18:52:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-604.html
+2015-02-23 18:52:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-717.html
+2015-02-23 18:52:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-459.html
+2015-02-23 18:52:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-387.html
+2015-02-23 18:52:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-103.html
+2015-02-23 18:52:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-872.html
+2015-02-23 18:52:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-64.html
+2015-02-23 18:52:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-89.html
+2015-02-23 18:52:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-645.html
+2015-02-23 18:52:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-418.html
+2015-02-23 18:52:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-598.html
+2015-02-23 18:52:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-31.html
+2015-02-23 18:52:05 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:05 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-710.html
+2015-02-23 18:52:05 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:05 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-111.html
+2015-02-23 18:52:05 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:05 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-838.html
+2015-02-23 18:52:06 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:06 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-225.html
+2015-02-23 18:52:06 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:06 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-686.html
+2015-02-23 18:52:06 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:06 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-338.html
+2015-02-23 18:52:06 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:06 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-224.html
+2015-02-23 18:52:07 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:52:07 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-985.html
+2015-02-23 18:53:50 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:53:51 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:53:53 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:53:55 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:55 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:53:55 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:55 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:53:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:53:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:53:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-678.html
+2015-02-23 18:53:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-994.html
+2015-02-23 18:53:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-40.html
+2015-02-23 18:53:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-363.html
+2015-02-23 18:53:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-194.html
+2015-02-23 18:53:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-701.html
+2015-02-23 18:53:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-532.html
+2015-02-23 18:53:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-847.html
+2015-02-23 18:53:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-977.html
+2015-02-23 18:53:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-177.html
+2015-02-23 18:53:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:53:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-216.html
+2015-02-23 18:54:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-662.html
+2015-02-23 18:54:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-734.html
+2015-02-23 18:54:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-396.html
+2015-02-23 18:54:01 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:01 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-515.html
+2015-02-23 18:54:01 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:01 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-476.html
+2015-02-23 18:54:01 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:01 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-249.html
+2015-02-23 18:54:01 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:01 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-814.html
+2015-02-23 18:54:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-920.html
+2015-02-23 18:54:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-881.html
+2015-02-23 18:54:02 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:02 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-120.html
+2015-02-23 18:54:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-695.html
+2015-02-23 18:54:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-39.html
+2015-02-23 18:54:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-548.html
+2015-02-23 18:54:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-200.html
+2015-02-23 18:54:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-329.html
+2015-02-23 18:54:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-961.html
+2015-02-23 18:54:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-161.html
+2015-02-23 18:54:05 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:05 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-73.html
+2015-02-23 18:54:05 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:05 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-758.html
+2015-02-23 18:54:05 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:05 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-589.html
+2015-02-23 18:54:38 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:54:38 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:54:40 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:54:42 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:42 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:54:42 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:42 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:54:42 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:42 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:54:43 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:43 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:54:43 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:43 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-678.html
+2015-02-23 18:54:43 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:43 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-994.html
+2015-02-23 18:54:44 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:44 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-40.html
+2015-02-23 18:54:44 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:44 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-363.html
+2015-02-23 18:54:44 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:44 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-194.html
+2015-02-23 18:54:45 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:45 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-701.html
+2015-02-23 18:54:45 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:45 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-532.html
+2015-02-23 18:54:45 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:45 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-847.html
+2015-02-23 18:54:45 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:45 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-977.html
+2015-02-23 18:54:46 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:54:46 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-177.html
+2015-02-23 18:56:07 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:56:07 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:56:09 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:56:11 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:11 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/
+2015-02-23 18:56:11 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:11 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:56:11 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:11 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:56:11 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:11 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:56:12 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:12 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:56:12 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:12 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-678.html
+2015-02-23 18:56:12 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:12 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-994.html
+2015-02-23 18:56:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-40.html
+2015-02-23 18:56:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-363.html
+2015-02-23 18:56:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-194.html
+2015-02-23 18:56:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-701.html
+2015-02-23 18:56:14 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:14 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-532.html
+2015-02-23 18:56:14 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:14 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-847.html
+2015-02-23 18:56:14 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:14 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-977.html
+2015-02-23 18:56:15 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:15 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-177.html
+2015-02-23 18:56:15 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:15 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-216.html
+2015-02-23 18:56:15 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:15 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-662.html
+2015-02-23 18:56:16 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:16 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-734.html
+2015-02-23 18:56:16 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:16 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-396.html
+2015-02-23 18:56:16 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:16 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-515.html
+2015-02-23 18:56:16 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:16 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-476.html
+2015-02-23 18:56:17 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:17 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-249.html
+2015-02-23 18:56:17 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:17 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-814.html
+2015-02-23 18:56:17 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:17 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-920.html
+2015-02-23 18:56:18 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:18 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-881.html
+2015-02-23 18:56:18 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:18 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-120.html
+2015-02-23 18:56:18 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:18 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-695.html
+2015-02-23 18:56:18 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:18 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-39.html
+2015-02-23 18:56:19 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:19 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-548.html
+2015-02-23 18:56:19 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:19 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-200.html
+2015-02-23 18:56:20 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:20 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-329.html
+2015-02-23 18:56:20 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:20 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-961.html
+2015-02-23 18:56:20 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:20 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-161.html
+2015-02-23 18:56:20 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:20 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-73.html
+2015-02-23 18:56:21 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:21 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-758.html
+2015-02-23 18:56:21 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:21 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-589.html
+2015-02-23 18:56:21 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:21 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-897.html
+2015-02-23 18:56:22 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:22 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-330.html
+2015-02-23 18:56:22 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:22 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-919.html
+2015-02-23 18:56:22 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:22 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-144.html
+2015-02-23 18:56:22 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:22 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-90.html
+2015-02-23 18:56:23 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:23 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-775.html
+2015-02-23 18:56:23 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:23 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-283.html
+2015-02-23 18:56:23 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:23 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-944.html
+2015-02-23 18:56:24 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:24 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-7.html
+2015-02-23 18:56:24 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:24 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-170.html
+2015-02-23 18:56:24 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:24 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-460.html
+2015-02-23 18:56:25 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:25 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-119.html
+2015-02-23 18:56:25 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:25 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-888.html
+2015-02-23 18:56:25 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:25 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-305.html
+2015-02-23 18:56:25 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:25 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-274.html
+2015-02-23 18:56:26 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:26 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-582.html
+2015-02-23 18:56:26 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:26 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-831.html
+2015-02-23 18:56:26 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:26 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-299.html
+2015-02-23 18:56:27 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:27 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-970.html
+2015-02-23 18:56:27 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:27 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-903.html
+2015-02-23 18:56:27 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:27 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-784.html
+2015-02-23 18:56:28 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:28 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-346.html
+2015-02-23 18:56:28 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:28 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-573.html
+2015-02-23 18:56:28 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:28 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-604.html
+2015-02-23 18:56:28 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:28 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-717.html
+2015-02-23 18:56:29 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:29 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-459.html
+2015-02-23 18:56:29 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:29 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-387.html
+2015-02-23 18:56:29 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:29 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-103.html
+2015-02-23 18:56:30 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:30 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-872.html
+2015-02-23 18:56:30 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:30 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-64.html
+2015-02-23 18:56:30 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:30 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-89.html
+2015-02-23 18:56:31 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:31 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-645.html
+2015-02-23 18:56:31 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:31 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-418.html
+2015-02-23 18:56:31 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:31 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-598.html
+2015-02-23 18:56:32 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:32 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-31.html
+2015-02-23 18:56:32 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:32 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-710.html
+2015-02-23 18:56:32 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:32 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-111.html
+2015-02-23 18:56:32 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:32 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-838.html
+2015-02-23 18:56:33 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:33 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-225.html
+2015-02-23 18:56:33 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:33 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-686.html
+2015-02-23 18:56:33 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:33 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-338.html
+2015-02-23 18:56:34 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:34 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-224.html
+2015-02-23 18:56:34 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:34 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-985.html
+2015-02-23 18:56:34 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:34 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-839.html
+2015-02-23 18:56:35 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:35 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-539.html
+2015-02-23 18:56:35 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:35 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-410.html
+2015-02-23 18:56:35 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:35 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-371.html
+2015-02-23 18:56:35 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:35 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-524.html
+2015-02-23 18:56:36 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:36 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-523.html
+2015-02-23 18:56:36 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:36 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-185.html
+2015-02-23 18:56:36 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:36 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-47.html
+2015-02-23 18:56:37 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:37 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-112.html
+2015-02-23 18:56:37 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:37 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-799.html
+2015-02-23 18:56:37 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:37 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-912.html
+2015-02-23 18:56:38 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:38 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-670.html
+2015-02-23 18:56:38 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:38 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-822.html
+2015-02-23 18:56:38 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:38 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-411.html
+2015-02-23 18:56:38 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:38 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-484.html
+2015-02-23 18:56:39 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:39 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-337.html
+2015-02-23 18:56:39 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:39 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-726.html
+2015-02-23 18:56:39 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:39 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-298.html
+2015-02-23 18:56:40 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:40 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-927.html
+2015-02-23 18:56:40 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:40 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-136.html
+2015-02-23 18:56:40 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:56:40 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-783.html
+2015-02-23 18:57:04 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:57:04 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:57:06 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:57:07 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:07 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/
+2015-02-23 18:57:07 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:07 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:57:08 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:08 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:57:08 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:08 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:57:08 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:08 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:57:09 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:09 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-678.html
+2015-02-23 18:57:09 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:09 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-994.html
+2015-02-23 18:57:09 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:09 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-40.html
+2015-02-23 18:57:10 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:10 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-363.html
+2015-02-23 18:57:10 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:10 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-194.html
+2015-02-23 18:57:10 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:10 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-701.html
+2015-02-23 18:57:10 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:10 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-532.html
+2015-02-23 18:57:11 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:11 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-847.html
+2015-02-23 18:57:11 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:11 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-977.html
+2015-02-23 18:57:11 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:11 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-177.html
+2015-02-23 18:57:12 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:12 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-216.html
+2015-02-23 18:57:12 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:12 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-662.html
+2015-02-23 18:57:12 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:12 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-734.html
+2015-02-23 18:57:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-396.html
+2015-02-23 18:57:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-515.html
+2015-02-23 18:57:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-476.html
+2015-02-23 18:57:13 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:13 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-249.html
+2015-02-23 18:57:14 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:14 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-814.html
+2015-02-23 18:57:14 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:14 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-920.html
+2015-02-23 18:57:14 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:14 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-881.html
+2015-02-23 18:57:15 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:15 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-120.html
+2015-02-23 18:57:15 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:15 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-695.html
+2015-02-23 18:57:15 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:15 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-39.html
+2015-02-23 18:57:16 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:16 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-548.html
+2015-02-23 18:57:16 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:16 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-200.html
+2015-02-23 18:57:16 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:16 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-329.html
+2015-02-23 18:57:17 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:17 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-961.html
+2015-02-23 18:57:17 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:17 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-161.html
+2015-02-23 18:57:17 WARN  Crawler:257 - Exception parsing HTML: null
+2015-02-23 18:57:17 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-73.html
+2015-02-23 18:57:59 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:57:59 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:58:01 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:58:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:58:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:58:03 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:58:03 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:58:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:58:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:58:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:58:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:58:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:58:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-678.html
+2015-02-23 18:58:04 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:58:04 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-994.html
+2015-02-23 18:58:05 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:58:05 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-40.html
+2015-02-23 18:59:52 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 18:59:52 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 18:59:54 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 18:59:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-402.html
+2015-02-23 18:59:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-380.html
+2015-02-23 18:59:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-23.html
+2015-02-23 18:59:56 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:56 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-233.html
+2015-02-23 18:59:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-678.html
+2015-02-23 18:59:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-994.html
+2015-02-23 18:59:57 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:57 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-40.html
+2015-02-23 18:59:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-363.html
+2015-02-23 18:59:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-194.html
+2015-02-23 18:59:58 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:58 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-701.html
+2015-02-23 18:59:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-532.html
+2015-02-23 18:59:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-847.html
+2015-02-23 18:59:59 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 18:59:59 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-977.html
+2015-02-23 19:00:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 19:00:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-177.html
+2015-02-23 19:00:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 19:00:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-216.html
+2015-02-23 19:00:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 19:00:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-662.html
+2015-02-23 19:00:00 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 19:00:00 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-734.html
+2015-02-23 19:00:01 WARN  Crawler:257 - Exception parsing HTML: no such vertex in graph
+2015-02-23 19:00:01 INFO  Crawler:258 - http://sikaman.dyndns.org:8888/courses/4601/resources/N-396.html
+2015-02-23 19:10:00 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-23 19:10:01 INFO  CrawlController:108 - Deleted contents of: /Users/braydengirard/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-23 19:10:02 INFO  CrawlController:165 - Crawler 1 started
+2015-02-23 19:10:42 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-23 19:10:52 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-23 19:11:02 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-23 19:11:02 INFO  Crawler:87 - Crawl Thread Complete
+2015-02-23 19:11:02 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-23 19:11:12 INFO  Controller:80 - Done crawling
+2015-02-23 19:11:12 INFO  CrawlIndexer:51 - Pooling crawler data
+2015-02-23 19:11:12 INFO  CrawlIndexer:178 - Total Documents with Image Alts: 100
+2015-02-23 19:11:12 INFO  CrawlIndexer:179 - Total Documents with Metadata: 0
+2015-02-23 19:11:12 INFO  CrawlIndexer:180 - Indexing Documents with Alts and Metadata ...
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 0
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 1
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 2
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 3
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 4
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 5
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 6
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 7
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 8
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 9
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 10
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 11
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 12
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 13
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 14
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 15
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 16
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 17
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 18
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 19
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 20
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 21
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 22
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 23
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 24
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 25
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 26
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 27
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 28
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 29
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 30
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 31
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 32
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 33
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 34
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 35
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 36
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 37
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 38
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 39
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 40
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 41
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 42
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 43
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 44
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 45
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 46
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 47
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 48
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 49
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 50
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 51
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 52
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 53
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 54
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 55
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 56
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 57
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 58
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 59
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 60
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 61
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 62
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 63
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 64
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 65
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 66
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 67
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 68
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 69
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 70
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 71
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 72
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 73
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 74
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 75
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 76
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 77
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 78
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 79
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 80
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 81
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 82
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 83
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 84
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 85
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 86
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 87
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 88
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 89
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 90
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 91
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 92
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 93
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 94
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 95
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 96
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 97
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 98
+2015-02-23 19:11:13 INFO  CrawlIndexer:100 - Indexing Document: 99
+2015-02-23 19:11:13 INFO  CrawlIndexer:191 - Done ...
+2015-02-23 19:11:13 INFO  Controller:89 - All Done Goodbye!
