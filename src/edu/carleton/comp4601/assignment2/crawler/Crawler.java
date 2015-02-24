@@ -63,17 +63,6 @@ public class Crawler extends WebCrawler {
 		domains = domain;
 	}
 
-	/**
-	 * 
-	 */
-	@Override
-	public void onStart() {
-		
-	}
-
-	/**
-	 * 
-	 */
 	@Override
 	public void onBeforeExit() {
 		try {
@@ -120,14 +109,14 @@ public class Crawler extends WebCrawler {
 	public void visit(Page page) {    
 
 		long startTime = System.nanoTime();
-		/*
+		
 		try {
 			Thread.sleep(this.sleepTime);
 
 		} catch (InterruptedException e) {
 			System.err.println("-- Sleep Interrupted");
 
-		}*/
+		}
 
 		Date date = new Date();
 		long currentTime = date.getTime();
@@ -151,9 +140,9 @@ public class Crawler extends WebCrawler {
 	}
 
 	/**
-	 * 
-	 * @param page
-	 * @param currentTime
+	 * Parses any binary data on a page
+	 * @param page A page that was crawled by the crawler
+	 * @param currentTime The time the page was crawled
 	 */
 	private void parseBinaryToDocument(Page page, long currentTime) {
 
@@ -193,9 +182,9 @@ public class Crawler extends WebCrawler {
 	}
 
 	/**
-	 * 
-	 * @param page
-	 * @param currentTime
+	 * Parses any html on a page
+	 * @param page A page that was crawled by the crawler
+	 * @param currentTime The time the page was crawled
 	 */
 	private void parseHTMLToDocument(Page page, long currentTime) {
 
@@ -278,7 +267,6 @@ public class Crawler extends WebCrawler {
 			existingPage = new PageVertex(docId, url, time);
 			this.crawlGraph.addVertex(existingPage);
 		} 
-		//System.out.println("Current vertex id is: " + docId + " and there are this many vertices: " + this.crawlGraph.idCounter);
 
 		if(parentUrl != null) {
 			PageVertex parentPage = this.crawlGraph.findVertex(parentUrl);
