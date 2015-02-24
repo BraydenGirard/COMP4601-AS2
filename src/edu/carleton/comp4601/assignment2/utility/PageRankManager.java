@@ -52,6 +52,8 @@ public class PageRankManager {
 	public Tuple<ArrayList<String>, ArrayList<Float>> getPageRank() {
 
 		if(rankComplete) {
+			
+			
 			ArrayList<Document> allDocuments = DatabaseManager.getInstance().getDocuments();
 			System.out.println("There are: " + allDocuments.size() + " documents");
 			//System.out.println("There are: " + currentVertices.size() + " vertices");
@@ -59,6 +61,16 @@ public class PageRankManager {
 			ArrayList<Float> documentRank = new ArrayList<Float>();
 
 			Multigraph<PageVertex, DefaultEdge> mutliGraph = this.graph.getGraph();
+			
+			System.out.println(pageRankMatrix.getRowDimension());
+			System.out.println(pageRankMatrix.getColumnDimension());
+			
+			for(int i=0; i < allDocuments.size(); i++) {
+				Document doc = allDocuments.get(i);
+				
+				documentTitle.add(doc.getName());
+				documentRank.add((float) pageRankMatrix.get(0, i));
+			}
 			
 			/*
 			for(int i=0; i<allDocuments.size(); i++) {
@@ -115,12 +127,7 @@ public class PageRankManager {
 
 		float documentRank = 0;
 
-		for(PageVertex v: currentVertices) {
-			if(v.getId() == docId) {
-				documentRank = (float) pageRanks.get(v.getRow());
-			}
-
-		}
+		documentRank = (float) pageRankMatrix.get(0, docId);
 
 		rankComplete = true;
 

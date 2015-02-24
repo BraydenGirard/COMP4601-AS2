@@ -135,7 +135,7 @@ public class CrawlIndexer {
 		}
 		
 		Date date = new Date();
-		doc.add(new LongField("date", date.getTime(), Field.Store.YES));
+		doc.add(new StringField("date", date.toString(), Field.Store.YES));
 		
 		if(data != null) {
 			String type = data.get(Metadata.CONTENT_TYPE);

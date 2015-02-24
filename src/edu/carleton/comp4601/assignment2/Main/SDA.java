@@ -49,7 +49,7 @@ public class SDA {
 	@Context
 	Request request;
 
-	final private String PATH = "http://localhost:8080/COMP4601SDA/rest/sda";
+	//final private String PATH = "http://localhost:8080/COMP4601SDA/rest/sda";
 	final String homePath = System.getProperty("user.home");
 	final String luceneIndexFolder = "/data/lucene/";
 	
@@ -299,10 +299,10 @@ public class SDA {
 		for (String s : d.getLinks())
 		{
 			htmlBuilder.append("<li>");
-			htmlBuilder.append("<a href=\"" + PATH);
+			htmlBuilder.append("<a href=\"");
 			htmlBuilder.append(s);
 			htmlBuilder.append("\">");
-			htmlBuilder.append(PATH + s);
+			htmlBuilder.append(s);
 			htmlBuilder.append("</a>");
 			htmlBuilder.append("</li>");
 		}
@@ -336,10 +336,10 @@ public class SDA {
 			for (String s : d.getLinks())
 			{
 				htmlBuilder.append("<li>");
-				htmlBuilder.append("<a href=\"" + PATH);
+				htmlBuilder.append("<a href=\"");
 				htmlBuilder.append(s);
 				htmlBuilder.append("\">");
-				htmlBuilder.append(PATH + s);
+				htmlBuilder.append(s);
 				htmlBuilder.append("</a>");
 				htmlBuilder.append("</li>");
 			}
@@ -592,7 +592,7 @@ public class SDA {
 		try {
 			SearchEngine searchEngine = new SearchEngine(homePath + luceneIndexFolder);
 			TopDocs topDocs = searchEngine.performSearch(terms, 100000);
-			System.out.println("Hello");
+			
 			if(topDocs.totalHits == 0) {
 				return htmlResponse("Error", "No documents found for terms provided");
 			}

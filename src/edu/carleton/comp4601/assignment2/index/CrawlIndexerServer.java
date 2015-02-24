@@ -10,6 +10,7 @@ import java.util.List;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.FieldType;
 import org.apache.lucene.document.LongField;
 import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
@@ -139,6 +140,12 @@ public class CrawlIndexerServer {
 	 * @throws IOException
 	 */
 	public void indexHTMLDocumentWithBoost(float boost, IndexWriter writer) throws IOException {
+		FieldType myStringType = new FieldType(StringField.TYPE_STORED);
+		myStringType.setOmitNorms(false);
+		
+		FieldType myLongType = new FieldType(LongField.TYPE_STORED);
+		myLongType.setOmitNorms(false);
+		
 		System.out.println("The boost value is: " + boost);
 		Document doc = new Document();
 		Field fieldId = new TextField("docId", document.getId().toString(), Field.Store.YES);
@@ -149,35 +156,36 @@ public class CrawlIndexerServer {
 		String text = document.getText();
 		
 		if(name != null) {
-			Field field = new StringField("docName", document.getName(), Field.Store.YES);
+			Field field = new Field("docName", document.getName(), myStringType);
 			field.setBoost(boost);
 			doc.add(field);
 		}
 		
 		if(text != null) {
-			Field field = new StringField("docText", document.getText(), Field.Store.YES);
+			Field field = new Field("docText", document.getText(), myStringType);
 			field.setBoost(boost);
 			doc.add(field);
 		}
 		
 		for (String tag : document.getTags()) {		
-			Field field = new StringField("docTag", tag, Field.Store.YES);
+			Field field = new Field("docTag", tag, myStringType);
 			field.setBoost(boost);
 			doc.add(field);
 		}
 		
 		for (String link : document.getLinks()) {
-			Field field = new StringField("docLink", link, Field.Store.YES);
+			Field field = new Field("docLink", link, myStringType);
 			field.setBoost(boost);
 			doc.add(field);
 		}
 		
 		Date date = new Date();
-		Field field = new LongField("date", date.getTime(), Field.Store.YES);
+		//Field field = new LongField("date", date.getTime(), Field.Store.YES);
+		Field field = new Field("date", date.toString(), myStringType);
 		field.setBoost(boost);
 		doc.add(field);
 		
-		field = new StringField("mimeType", "text/html", Field.Store.YES);
+		field = new Field("mimeType", "text/html", myStringType);
 		field.setBoost(boost);
 		doc.add(field);
 			
@@ -224,7 +232,7 @@ public class CrawlIndexerServer {
 		}
 		
 		Date date = new Date();
-		doc.add(new LongField("date", date.getTime(), Field.Store.YES));
+		doc.add(new StringField("date", date.toString(), Field.Store.YES));
 		
 		
 		doc.add(new StringField("mimeType", "text/html", Field.Store.YES));
