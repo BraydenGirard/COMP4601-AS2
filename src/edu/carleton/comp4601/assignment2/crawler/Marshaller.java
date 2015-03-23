@@ -27,11 +27,11 @@ public class Marshaller {
 		return byteStream.toByteArray();
 	}
 
-	/**
+	/**s
 	 * Return an object which has been deserialized from a byte array
 	 * 
 	 * @param data A byte array of serialized data
-	 * @return
+	 * @return object The deserialized object
 	 * @throws IOException
 	 */
 	public static Object deserializeObject(byte[] data) throws IOException {

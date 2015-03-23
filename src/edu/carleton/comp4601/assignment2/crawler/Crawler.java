@@ -67,6 +67,9 @@ public class Crawler extends WebCrawler {
 	public static void configure(String[] domain) {
 		domains = domain;
 	}
+	/*
+	@Override
+	public void onStart() {};*/
 
 	/**
 	 * Called before the crawler thread exits. Serializes the graph and writes to the database.
@@ -119,13 +122,14 @@ public class Crawler extends WebCrawler {
 		long startTime = System.nanoTime();
 		
 		// Adaptive sleep
+		/*
 		try {
 			Thread.sleep(this.sleepTime);
 
 		} catch (InterruptedException e) {
 			System.err.println("-- Sleep Interrupted");
 
-		}
+		}*/
 
 		Date date = new Date();
 		long currentTime = date.getTime();
@@ -144,9 +148,10 @@ public class Crawler extends WebCrawler {
 		}
 		
 		// Adaptive calculation 
+		/*
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime);
-		this.sleepTime = duration * 2;
+		this.sleepTime = duration * 2;*/
 	}
 
 	/**
